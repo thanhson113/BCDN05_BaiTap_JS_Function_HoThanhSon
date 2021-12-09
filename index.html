@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Function</title>
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Bài 1 -->
+    <div class="container">
+        <div class="w-50 py-5 text-center">
+            <div class="card rounded">
+                <div class="card-header bg-dark text-light text-uppercase">
+                    Quản lý tuyển sinh
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="inpScore" placeholder="Chọn điểm chuẩn">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="area">
+                                <option value="X">Chọn khu vực</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="object">
+                                <option value="0">Chọn đối tượng</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="inpTest1" placeholder="Điểm môn 1">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="inpTest2" placeholder="Điểm môn 2">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="inpTest3" placeholder="Điểm môn 3">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" id="btnKetQua"">Kết
+                            quả</button>
+                    </form>
+                    <p class="alert alert-success my-3" id="txtThongBao"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     <!-- Bài 2 -->
+     <div class="container">
+        <div class="w-50 py-5 text-center">
+            <div class="card rounded">
+                <div class="card-header bg-dark text-light text-uppercase">
+                    Tính tiền điện
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inpName" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="inpKW" placeholder="Nhập số KW">
+                        </div>
+                        <button type="button" class="btn btn-danger w-100" id="btnTinhTien">Tính tiền điện</button>
+                    </form>
+                    <p class="alert alert-success my-3" id="txtTinhTien"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- BS4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/main-func.js"></script>
+    <script src="./js/main-func2.js"></script>
+</body>
+
+</html>
