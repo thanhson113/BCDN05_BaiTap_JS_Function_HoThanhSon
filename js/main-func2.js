@@ -26,7 +26,7 @@ function tinhTienDien(){
     var totalMoney = 0;
 
     if(soKW == 0){
-        document.getElementById('txtTinhTien').innerHTML = "Vui lòng nhập tiền điện !"
+        document.getElementById('txtTinhTien').innerHTML = "Vui lòng nhập số kw điện !"
     }else{
          if(soKW <= 50){
             totalMoney = soKW * giaDau;
@@ -40,11 +40,11 @@ function tinhTienDien(){
         }else if(soKW > 350){
             totalMoney  = giaDau * 50 + gia50_Ke * 50 + gia100_Ke * 100 + gia150_Ke * 150 + (soKW - 350) * giaConLai ;  
         }
+        document.getElementById('txtTinhTien').innerHTML = 
+        "Họ tên: "+name+" <br>Tiền điện: "+new Intl.NumberFormat('vn-VN',).format(totalMoney)+ ' VND';
         
     } 
        
-        document.getElementById('txtTinhTien').innerHTML = 
-        "Họ tên: "+name+" <br>Tiền điện: "+new Intl.NumberFormat('vn-VN',).format(totalMoney)+ ' VND';
     
 }
 

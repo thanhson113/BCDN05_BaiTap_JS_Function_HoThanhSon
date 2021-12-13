@@ -26,11 +26,7 @@ function calScore() {
     var test3 = Number(document.getElementById('inpTest3').value);
     var score = Number(document.getElementById('inpScore').value);
 
-    if (score == 0) {
-        document.getElementById('txtThongBao').innerHTML =
-            "Bạn hãy nhập điểm chuẩn ! "
-    }
-    else if (test1 == 0 || test2 == 0 || test3 == 0) {
+    if (test1 == 0 || test2 == 0 || test3 == 0) {
         document.getElementById('txtThongBao').innerHTML =
             "Bạn đã rớt do có điểm 0 !"
     } else {
@@ -76,6 +72,7 @@ function kiemTraDoiTuong(paTotalScore) {
     }
 
 }
+
 function ketQua(ketQua, paScore) {
 
     if (ketQua >= paScore) {
